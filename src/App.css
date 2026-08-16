@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333;
+  font-size: clamp(2.25rem, 7vw, 8rem);
+  line-height: 1.1;
+  width: 0;
+  animation: typing 2.2s steps(14) forwards, blink 0.75s step-end infinite;
+}
+
+@media (max-width: 640px) {
+  .typewriter {
+    font-size: clamp(1.8rem, 9vw, 3.2rem);
+    animation: typing-mobile 2.2s steps(14) forwards, blink 0.75s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 14ch; }
+}
+
+@keyframes typing-mobile {
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
