@@ -12,9 +12,13 @@ function App() {
       <Top name="Projects" link="#projects"/>
       <Top name="Contact" link="#contact"/>
      </div>
-     <div className='min-h-screen flex items-center justify-center px-4 pt-16'>
-      <h1 className='text-center text-4xl font-serif text-gray-900'>Hi, I'm</h1>
-      <h1 className='typewriter text-center'>Pushkar Sharma</h1>
+     <div className='min-h-screen flex flex-col items-center justify-center px-4 pt-16'>
+      <h1 className='text-left text-4xl font-serif text-gray-900'>Hi visiter! I am,</h1>
+      <h1 className='typewriter text-center text-black bg-white'>Pushkar Sharma</h1>
+      <h2 className='text-center text-lg font-sans text-gray-600'>JAVA & PYTHON BACKEND | FLUTTER APP DEVELOPMENT | REACT AND JAVASCRIPT</h2>
+     </div>
+     <div id="aboutme" className='min-h-screen flex items-center justify-center px-4 pt-16'>
+      <h1 className='text-center text-4xl font-serif text-gray-900'>About Me</h1>
      </div>
     </>
   )
